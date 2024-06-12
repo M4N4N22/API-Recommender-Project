@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Code Recommender</title>
+</head>
+<body>
+    <h1>API Code Recommender</h1>
+    <h2>Query: {{ query }}</h2>
+    <h3>Recommendations:</h3>
+    <ul>
+        {% for rec in recommendations %}
+        <li>
+            <b>API Name:</b> {{ rec['API Name          '] }}<br>
+            <b>Function/Method Name:</b> {{ rec['Function/Method Name      '] }}<br>
+            <b>Code Snippet:</b> <pre>{{ rec['Code Snippet                                                                                                                                                  '] }}</pre><br>
+            <b>Description/Functionality:</b> {{ rec['Description/Functionality             '] }}<br>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>
